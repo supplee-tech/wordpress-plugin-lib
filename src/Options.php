@@ -46,9 +46,9 @@ class Options
 
     public function save() : void
     {
-        if ($this->has_options) {
+        // if ($this->has_options) {
             update_option($this->option_name, $this->values());
-        }
+        // }
     }
 
     static function init() : void {
