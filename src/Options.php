@@ -62,7 +62,7 @@ class Options
     static function init() : void {
         $class = static::class;
         self::$_instance = new $class();
-        self::$plugin_path = dirname(__FILE__, 2);
+        self::$plugin_path = dirname(__FILE__, 5);
         self::$plugin_url = plugins_url('', self::$plugin_path . '/hack');
     }
 
