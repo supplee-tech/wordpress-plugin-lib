@@ -6,6 +6,9 @@
 		"psr-4": {
 			"PluginLib\\": "src/"
 		},
-		"classmap": ["src/"]
+		"classmap": ["src/"],
+		"files": [
+			"src/functions.php"
+		]
 	}
 }
