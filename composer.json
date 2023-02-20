@@ -1,7 +1,7 @@
 {
     "name": "supplee-tech/wordpress-plugin-lib",
     "require": {
-		"michelf/php-markdown": "^1.9",
+		"michelf/php-markdown": "^1.9"
     },
 	"autoload": {
 		"psr-4": {
