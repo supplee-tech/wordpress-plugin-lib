@@ -127,5 +127,18 @@ HTML;
 
 <?php
     }
+
+    function documentation_tab() : void {
+        $this->echo_markdown_file($this->plugin_path . '/DOCUMENTATION.md');
+    }
+
+    function readme_tab() : void {
+        $this->echo_markdown_file($this->plugin_path . '/README.md');
+    }
+
+    function notes_tab() : void {
+        $this->echo_markdown_file($this->plugin_path . '/NOTES.md');
+    }
+
     abstract function handle_post() : string;
 }
