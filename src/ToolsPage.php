@@ -129,7 +129,7 @@ HTML;
     }
 
     function documentation_tab() : void {
-        $this->echo_markdown_file($this->plugin_path . '/DOCUMENTATION.md');
+        $this->echo_markdown_file($this->plugin_path . '/Documentation.md');
     }
 
     function readme_tab() : void {
@@ -138,6 +138,10 @@ HTML;
 
     function notes_tab() : void {
         $this->echo_markdown_file($this->plugin_path . '/NOTES.md');
+    }
+
+    function about_tab() : void {
+        $this->echo_markdown_file($this->plugin_path . '/ABOUT.md');
     }
 
     abstract function handle_post() : string;
