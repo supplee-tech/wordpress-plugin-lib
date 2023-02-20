@@ -1,0 +1,9 @@
+div.doc-markdown {
+  width: 50em;
+}
+div.doc-markdown ul li {
+  list-style: disc;
+}
+div.doc-markdown ul li::before {
+  width: 2em;
+}

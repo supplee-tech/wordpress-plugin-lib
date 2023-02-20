@@ -1,0 +1,11 @@
+{
+    "name": "supplee-tech/wordpress-plugin-lib",
+    "require": {
+    },
+	"autoload": {
+		"psr-4": {
+			"PluginLib\\": "src/"
+		},
+		"classmap": ["src/"]
+	}
+}
