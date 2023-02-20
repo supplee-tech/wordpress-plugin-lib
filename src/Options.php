@@ -12,6 +12,7 @@ class Options
     protected string $option_name;
     protected bool $has_options = false;
     protected array $properties = [];
+    protected array $int_properties = [];
 
     function __construct() {
         $this->read();
@@ -27,6 +28,13 @@ class Options
 
     public function properties() : array {
         return $this->properties;
+    }
+
+    public function set_property(string $name, $value) : void {
+        if (in_array($name, $this->int_properties)) {
+            $value = (int) $value;
+        }
+        $this->$name = $value;
     }
 
     public function read(?array $defaults=null) : void
