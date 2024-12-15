@@ -20,6 +20,8 @@ abstract class ToolsPage {
         $this->name_abbrev = $name_abbrev;
         $this->menu_slug = $menu_slug;
         $this->plugin_path = $plugin_path;
+        self::register_styles();
+        self::enqueue_styles();
     }
 
     static function register_styles() : void {
