@@ -1,6 +1,9 @@
 div.doc-markdown {
   width: 50em;
 }
+div.doc-markdown ul {
+  margin-left: 1.5em;
+}
 div.doc-markdown ul li {
   list-style: disc;
 }
